@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    tools:context=".inside.VerNota">
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="166dp"
+        android:layout_height="221dp"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="492dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/papeleria_papeles_apilados" />
+
+    <EditText
+        android:id="@+id/txtContenidoNota2"
+        android:layout_width="304dp"
+        android:layout_height="296dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edidtext_background"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Contenido"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTituloNota2" />
+
+    <ImageButton
+        android:id="@+id/btnBackToCrearNota2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="129dp"
+        android:layout_height="171dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/correo" />
+
+    <EditText
+        android:id="@+id/txtTituloNota2"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="196dp"
+        android:background="@drawable/edidtext_background"
+        android:ems="10"
+        android:hint="Titulo"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBorrarNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/accentColor"
+        android:text="Borrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContenidoNota2" />
+
+    <ImageView
+        android:id="@+id/btnActualizarNota"
+        android:layout_width="72dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/actualizado" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
